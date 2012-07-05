@@ -14,7 +14,7 @@ describe("When the start button is pressed", function () {
         $('body').append('<div id="fixture"><button id="startButton" type="button">Start</button></div>') ;
 
 
-        var startButton = $('#startButton');
+        var startButton = $('#startButton')[0];
         startButton.onclick = function () {
             startPomodoro();
         };

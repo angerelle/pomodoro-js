@@ -37,6 +37,7 @@ describe("When a pomodoro is started", function() {
             return pomodoro.timeRemaining == (25 * 60) - 1;
         }, "by the time a second has passed, the time should have counted down one second", 1100);
     });
+
 });
 
 
