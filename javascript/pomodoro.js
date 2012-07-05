@@ -22,14 +22,6 @@ function countdownTime(pomodoro) {
     pomodoro.timeRemaining--;
 }
 
-function PomodoroController(model) {
-    this.pomodoro = model;
-
-}
-
-PomodoroController.prototype.onStart = function() {
-  this.pomodoro.start();
-};
 
 
 
