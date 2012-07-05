@@ -19,7 +19,12 @@ Pomodoro.prototype.start = function () {
 };
 
 function countdownTime(pomodoro) {
-    pomodoro.timeRemaining--;
+    if (pomodoro.timeRemaining == 0) {
+        clearInterval(pomodoroTimer);
+    } else {
+        pomodoro.timeRemaining--;
+    }
+
 }
 
 

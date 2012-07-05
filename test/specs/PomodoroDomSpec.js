@@ -25,6 +25,7 @@ describe("When the start button is pressed", function () {
     });
 
     afterEach(function () {
+        clearInterval(pomodoroTimer);
         $('#fixture').remove();
     });
 
